@@ -11,9 +11,9 @@
 		<h:form id="form">
 			<h:panelGrid columns="2" cellpadding="5">
 				<p:outputLabel>Text</p:outputLabel>
-				<p:inputText id="text"></p:inputText>
+				<p:inputText id="text" value="#{sample1View.text}"></p:inputText>
 			</h:panelGrid>
-			<p:commandButton value="Submit" />
+			<p:commandButton value="Submit" actionListener="#{sample1RequestBean.onSubmit}"/>
 		</h:form>
 	</ui:define>
 </ui:composition>
