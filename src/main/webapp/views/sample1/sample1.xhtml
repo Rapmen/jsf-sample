@@ -6,10 +6,14 @@
 	xmlns:pe="http://primefaces.org/ui/extensions">
 <ui:composition template="/templates/masterLayout.xhtml">
 	<ui:define name="content">
-		<h1>JSF Sample</h1>
+		<h1>Sample 1</h1>
 		<br />
-		<h:form>
-			<p:commandLink action="/views/sample1/sample1.jsf">Sample 1</p:commandLink>
+		<h:form id="form">
+			<h:panelGrid columns="2" cellpadding="5">
+				<p:outputLabel>Text</p:outputLabel>
+				<p:inputText id="text"></p:inputText>
+			</h:panelGrid>
+			<p:commandButton value="Submit" />
 		</h:form>
 	</ui:define>
 </ui:composition>
