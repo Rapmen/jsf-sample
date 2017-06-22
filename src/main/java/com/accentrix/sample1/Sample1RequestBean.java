@@ -8,16 +8,16 @@ import javax.faces.bean.RequestScoped;
 @ManagedBean
 @RequestScoped
 public class Sample1RequestBean {
-	
-	@ManagedProperty("sample1View")
+
+	@ManagedProperty(value = "#{sample1View}")
 	private Sample1View sample1View;
-	
+
 	@PostConstruct
-	private void init(){
+	private void init() {
 		System.out.println("Sample1RequestBean init======");
 	}
-	
-	public void onSubmit(){
+
+	public void onSubmit() {
 		System.out.println(sample1View.getText());
 	}
 
